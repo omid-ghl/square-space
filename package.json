@@ -1,0 +1,37 @@
+{
+  "name": "square-space",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "yarn lint:eslint && yarn lint:prettier",
+    "test": "vitest --root src --run",
+    "test:watch": "vitest --root src",
+    "lint:eslint": "yarn eslint --fix src",
+    "lint:prettier": "prettier --write src"
+  },
+  "dependencies": {
+    "@radix-ui/themes": "^2.0.0",
+    "@tanstack/react-query": "^4.36.1",
+    "class-variance-authority": "^0.7.0",
+    "next": "13.5.5",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-hot-toast": "^2.4.1",
+    "tailwind-merge": "^1.14.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "autoprefixer": "^10",
+    "eslint": "^8",
+    "eslint-config-next": "13.5.5",
+    "postcss": "^8",
+    "tailwindcss": "^3",
+    "typescript": "^5",
+    "vitest": "^0.34.6"
+  }
+}
